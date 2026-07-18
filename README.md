@@ -30,4 +30,4 @@ Authenticate with crates.io, verify the commit and version, then run:
 ./scripts/publish.sh --execute
 ```
 
-The script publishes all part crates first, waits for registry indexing, and publishes the facade last. Tag the verified commit after publishing.
+The script publishes all part crates first, waits for registry indexing, and publishes the facade last. After crates.io's initial five-new-crate burst, it backs off for the registry's ten-minute allowance refill between new package names. Tag the verified commit after publishing.

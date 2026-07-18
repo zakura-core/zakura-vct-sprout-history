@@ -22,7 +22,7 @@ publish_package() {
   package="$1"
   version="1.0.0"
 
-  for attempt in $(seq 1 20); do
+  for attempt in $(seq 1 12); do
     search_result="$(cargo search "$package" --limit 5)"
     if [[ "$search_result" == *"$package = \"$version\""* ]]; then
       echo "${package} ${version} is available at crates.io"
@@ -31,11 +31,12 @@ publish_package() {
     if CARGO_HTTP_MULTIPLEXING=false cargo publish --locked -p "$package"; then
       return
     fi
-    if [ "$attempt" -eq 20 ]; then
-      echo "${package} publish failed after 20 attempts" >&2
+    if [ "$attempt" -eq 12 ]; then
+      echo "${package} publish failed after 12 attempts" >&2
       exit 1
     fi
-    sleep 15
+    echo "waiting 10 minutes for the crates.io new-crate allowance to refill"
+    sleep 600
   done
 }
 
