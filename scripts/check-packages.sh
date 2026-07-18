@@ -9,7 +9,7 @@ cargo clippy --workspace --all-targets -- -D warnings
 cargo test --workspace
 
 packages=()
-for number in $(seq 0 8); do
+for number in $(seq 0 9); do
   index="$(printf '%02d' "$number")"
   packages+=("zakura-vct-sprout-history-part-${index}")
 done

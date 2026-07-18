@@ -2,13 +2,13 @@
 
 This repository publishes Zakura's canonical Mainnet VCT Sprout-history artifact as a family of crates.io packages. It keeps the artifact out of the primary Zakura source repository while preserving compile-time embedding and offline runtime use.
 
-The facade crate is `zakura-vct-sprout-history`. Its nine exact-versioned part crates exist only to remain below crates.io's per-package size limit. Consumers should not depend on parts directly.
+The facade crate is `zakura-vct-sprout-history`. Its ten exact-versioned part crates exist only to remain below crates.io's per-package size limit. Consumers should not depend on parts directly.
 
 ## Reviewed artifact
 
 - Length: `71710871` bytes
 - SHA-256: `abf89ec7b9eacbe7a259be891a17059496f2c7c7c2144d3babb34f85f8098832`
-- Parts: eight 8 MiB parts and one 4602007-byte remainder
+- Parts: seven 8 MiB parts, two 4 MiB parts, and one 4602007-byte remainder
 
 ## Verify
 

@@ -25,6 +25,7 @@ zakura_vct_sprout_history_part_05 = { package = "zakura-vct-sprout-history-part-
 zakura_vct_sprout_history_part_06 = { package = "zakura-vct-sprout-history-part-06", path = "../part-06", version = "=1.0.0" }
 zakura_vct_sprout_history_part_07 = { package = "zakura-vct-sprout-history-part-07", path = "../part-07", version = "=1.0.0" }
 zakura_vct_sprout_history_part_08 = { package = "zakura-vct-sprout-history-part-08", path = "../part-08", version = "=1.0.0" }
+zakura_vct_sprout_history_part_09 = { package = "zakura-vct-sprout-history-part-09", path = "../part-09", version = "=1.0.0" }
 
 [dev-dependencies]
 sha2 = "0.10"

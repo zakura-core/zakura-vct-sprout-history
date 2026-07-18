@@ -99,6 +99,7 @@ dependencies = [
  "zakura-vct-sprout-history-part-06",
  "zakura-vct-sprout-history-part-07",
  "zakura-vct-sprout-history-part-08",
+ "zakura-vct-sprout-history-part-09",
 ]
 
 [[package]]
@@ -135,4 +136,8 @@ version = "1.0.0"
 
 [[package]]
 name = "zakura-vct-sprout-history-part-08"
+version = "1.0.0"
+
+[[package]]
+name = "zakura-vct-sprout-history-part-09"
 version = "1.0.0"

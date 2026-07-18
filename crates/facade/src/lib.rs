@@ -11,6 +11,7 @@ use zakura_vct_sprout_history_part_05 as part_05;
 use zakura_vct_sprout_history_part_06 as part_06;
 use zakura_vct_sprout_history_part_07 as part_07;
 use zakura_vct_sprout_history_part_08 as part_08;
+use zakura_vct_sprout_history_part_09 as part_09;
 
 /// Complete artifact length in bytes.
 pub const TOTAL_LEN: usize = 71710871;
@@ -32,7 +33,7 @@ pub struct PartMetadata {
 }
 
 /// Ordered static artifact parts.
-pub static PARTS: [&[u8]; 9] = [
+pub static PARTS: [&[u8]; 10] = [
     part_00::BYTES,
     part_01::BYTES,
     part_02::BYTES,
@@ -41,11 +42,12 @@ pub static PARTS: [&[u8]; 9] = [
     part_05::BYTES,
     part_06::BYTES,
     part_07::BYTES,
+    part_09::BYTES,
     part_08::BYTES,
 ];
 
 /// Metadata corresponding to [`PARTS`].
-pub const PART_METADATA: [PartMetadata; 9] = [
+pub const PART_METADATA: [PartMetadata; 10] = [
     PartMetadata {
         offset: part_00::OFFSET,
         len: part_00::LEN,
@@ -85,6 +87,11 @@ pub const PART_METADATA: [PartMetadata; 9] = [
         offset: part_07::OFFSET,
         len: part_07::LEN,
         sha256: part_07::SHA256,
+    },
+    PartMetadata {
+        offset: part_09::OFFSET,
+        len: part_09::LEN,
+        sha256: part_09::SHA256,
     },
     PartMetadata {
         offset: part_08::OFFSET,
