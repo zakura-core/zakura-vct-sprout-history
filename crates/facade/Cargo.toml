@@ -1,0 +1,30 @@
+[package]
+name = "zakura-vct-sprout-history"
+version.workspace = true
+authors.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Canonical Mainnet VCT Sprout-history artifact for Zakura"
+readme = "README.md"
+keywords = ["zcash", "zakura", "sprout", "blockchain"]
+categories = ["cryptography::cryptocurrencies", "data-structures"]
+include = ["Cargo.toml", "README.md", "src/lib.rs"]
+
+[lints]
+workspace = true
+
+[dependencies]
+zakura_vct_sprout_history_part_00 = { package = "zakura-vct-sprout-history-part-00", path = "../part-00", version = "=1.0.0" }
+zakura_vct_sprout_history_part_01 = { package = "zakura-vct-sprout-history-part-01", path = "../part-01", version = "=1.0.0" }
+zakura_vct_sprout_history_part_02 = { package = "zakura-vct-sprout-history-part-02", path = "../part-02", version = "=1.0.0" }
+zakura_vct_sprout_history_part_03 = { package = "zakura-vct-sprout-history-part-03", path = "../part-03", version = "=1.0.0" }
+zakura_vct_sprout_history_part_04 = { package = "zakura-vct-sprout-history-part-04", path = "../part-04", version = "=1.0.0" }
+zakura_vct_sprout_history_part_05 = { package = "zakura-vct-sprout-history-part-05", path = "../part-05", version = "=1.0.0" }
+zakura_vct_sprout_history_part_06 = { package = "zakura-vct-sprout-history-part-06", path = "../part-06", version = "=1.0.0" }
+zakura_vct_sprout_history_part_07 = { package = "zakura-vct-sprout-history-part-07", path = "../part-07", version = "=1.0.0" }
+zakura_vct_sprout_history_part_08 = { package = "zakura-vct-sprout-history-part-08", path = "../part-08", version = "=1.0.0" }
+
+[dev-dependencies]
+sha2 = "0.10"
