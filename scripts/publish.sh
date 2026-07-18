@@ -9,12 +9,10 @@ fi
 repo_root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$repo_root"
 
-for command in cargo; do
-  command -v "$command" >/dev/null || {
-    echo "missing required command: $command" >&2
-    exit 1
-  }
-done
+command -v cargo >/dev/null || {
+  echo "missing required command: cargo" >&2
+  exit 1
+}
 
 ./scripts/check-packages.sh
 
